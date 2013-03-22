@@ -1,0 +1,80 @@
+<html lang="en-GB">
+	<head>
+		<title>Oceanfoil - Sustainability</title>
+		<!--  meta tags KEYWORDS not really needed but there for completeness -->
+		<meta name="robots" content="INDEX, FOLLOW">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="google" content="translate" />
+		<meta name="author" content="Matthew James">
+		<meta http-equiv="Content-Language" content="en-GB">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!-- links to stylesheets -->
+		<link href="includes/css/fontstylesheet.css" type="text/css" rev="fontstylesheet.css" rel="stylesheet" media="screen"/>
+		<link href="includes/css/style.css" type="text/css" rev="style.css" rel="stylesheet" media="screen"/>
+		<link href="includes/css/nivo-slider.css" type="text/css" rev="nivo-slider.css" rel="stylesheet" media="screen"/>
+		<link href="includes/css/light.css" type="text/css" rev="light.css" rel="stylesheet" media="screen"/>
+		<!-- links to script includes -->
+		<script type="text/javascript" src="includes/js/jquery-1.9.0.min.js"></script>
+    	<script type="text/javascript" src="includes/js/jquery.nivo.slider.js"></script>
+		<!--  IE hack -->
+		<!--[if IE]>
+		<script type="text/javascript">
+				/* if you need a jQuery to fire within IE browser */
+				$(window).load(function() {
+        			$('#slider').nivoSlider();
+    			});
+				
+		</script>
+		<![endif] -->
+		<script>
+		function revealCopy(id){
+			if($('#box_'+id).css('display') == 'none'){ 
+				$('#box_'+id).show('slow');
+				$('#rm_'+id).text('>CLOSE');
+			} else {
+					$('#box_'+id).hide('slow');
+					$('#rm_'+id).text('>READ MORE');
+			}
+		}
+		</script>
+		<style type="text/css">
+		<!--
+		@import "includes/css/style.css";
+		@import "includes/css/nivo-slider.css";
+		@import "includes/css/light.css";
+		-->
+		</style>
+		<!-- fav icon -->
+		<link rel="SHORTCUT ICON" href="favicon.ico" />
+	</head>
+	<body>
+	<!-- body content -->
+	<div id="holder" class="clearfix">
+		<div id="logo"><img src="images/logo.jpg" alt="OceanfoilLogo" border="0" width="216" height="114"/></div>
+		<div id="cont_us" align="left"><a href="contactUs.html">CONTACT US</a></div>
+			<div id="menu">
+				<div class="m_option_norm" align="center"><a href="index.html">HOME</a></div>
+				<div class="m_option_norm" align="center"><a href="aboutUs.html" >ABOUT US</a></div>
+				<div class="m_option_norm" align="center"><a href="innovation.html" >INNOVATION</a></div>
+				<div class="m_option_norm" align="center"><a href="investors.html" >INVESTORS</a></div>
+				<div class="m_option_sustain" align="center"><a href="sustainability.html" >SUBSTAINABILITY</a></div>
+				<div class="m_option_news" align="left"><a href="news.html" >NEWS</a></div>
+			</div>
+			<div style="clear:both"></div>
+			<div id="leftImage"><img src="images/img_sustainability.png" alt="sustainability Image" width="320px" height="587" /></div>
+			<div id="pageContent">
+				<h1 class="h1Green">By reducing fuel consumption, Oceanfoil’s technology makes ocean transport cheaper and more sustainable.</h1>
+						<p>The current, challenging economic climate makes the case for alternative sources of energy
+							and more efficient propulsion increasingly important to the future of the sea and ocean transport
+							sector. Oceanfoil has partnered with two of Europe’s leading research-based universities to
+							re-evaluate and redevelop the designs for the modern fleet.</p>
+				</div>
+		</div>	
+	</div>
+		<div id="footer">
+			<div id="bottom_menu">Privacy / Feedback / Disclaimer / Accessibility / Site Map</div>
+			<div id="copyright" align="right">Copyright Oceanfoil Limited</div>
+		</div>
+	</body>
+</html>

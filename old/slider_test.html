@@ -1,0 +1,59 @@
+<html lang="en-GB">
+	<head>
+		<title></title>
+		<!--  meta tags KEYWORDS not really needed but there for completeness -->
+		<meta name="robots" content="INDEX, FOLLOW">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="google" content="translate" />
+		<meta name="author" content="Matthew James">
+		<meta http-equiv="Content-Language" content="en-GB">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!-- links to stylesheets -->
+		<link href="includes/style/style.css" type="text/css" rev="style.css" rel="stylesheet" media="screen"/>
+		<link href="includes/css/light.css" type="text/css" rev="light.css" rel="stylesheet" media="screen"/>
+				<link href="includes/css/nivo-slider.css" type="text/css" rev="nivo-slider.css" rel="stylesheet" media="screen"/>
+		<!-- links to script includes -->
+		<script type="text/javascript" src="includes/js/"></script>
+		<!-- links to script includes -->
+		<script type="text/javascript" src="includes/js/jquery-1.9.0.min.js"></script>
+    	<script type="text/javascript" src="includes/js/jquery.nivo.slider.js"></script>
+		<!--  IE hack -->
+		<!--[if IE]>
+		<script type="text/javascript">
+				$(document).ready(function() {
+				/* if you need a jQuery to fire within IE browser */
+				});
+		</script>
+		<![endif] -->
+		
+		<style type="text/css">
+		<!--
+		@import "includes/css/style.css";
+		@import "includes/css/light.css";
+
+		-->
+		</style>
+		<!-- fav icon -->
+		<link rel="SHORTCUT ICON" href="favicon.ico" />
+	</head>
+	<body>
+	<!-- body content -->
+	<div class="slider-wrapper theme-light">
+		<div id="slider" class="theme-light">
+                <img src="images/slider_img_1.jpg" data-thumb="images/slider_img_1.jpg" alt="" data-transition="slideInLeft"/>
+                <img src="images/slider_img_2.jpg" data-thumb="images/slider_img_2.jpg" alt="" data-transition="slideInLeft" />
+                <img src="images/slider_img_3.jpg" data-thumb="images/slider_img_3.jpg" alt=""  data-transition="slideInLeft"/>
+                <img src="images/slider_img_4.jpg" data-thumb="images/slider_img_4.jpg" alt="" data-transition="slideInLeft"/>
+                <img src="images/slider_img_5.jpg" data-thumb="images/slider_img_5.jpg" alt="" data-transition="slideInLeft"/>
+                <img src="images/slider_img_6.jpg" data-thumb="images/slider_img_6.jpg" alt="" data-transition="slideInLeft"/>
+            </div>
+        </div>
+      </div>
+		<script type="text/javascript">
+    		$(window).load(function() {
+        	$('#slider').nivoSlider();
+    		});
+    	</script>
+	</body>
+</html>

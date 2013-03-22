@@ -1,0 +1,223 @@
+<html lang="en-GB">
+	<head>
+		<title>Oceanfoil - About Us</title>
+		<!--  meta tags KEYWORDS not really needed but there for completeness -->
+		<meta name="robots" content="INDEX, FOLLOW">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="google" content="translate" />
+		<meta name="author" content="Matthew James">
+		<meta http-equiv="Content-Language" content="en-GB">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!-- links to stylesheets -->
+		<link href="includes/css/fontstylesheet.css" type="text/css" rev="fontstylesheet.css" rel="stylesheet" media="screen"/>
+		<link href="includes/css/style.css" type="text/css" rev="style.css" rel="stylesheet" media="screen"/>
+		<link href="includes/css/nivo-slider.css" type="text/css" rev="nivo-slider.css" rel="stylesheet" media="screen"/>
+		<link href="includes/css/light.css" type="text/css" rev="light.css" rel="stylesheet" media="screen"/>
+		<!-- links to script includes -->
+		<script type="text/javascript" src="includes/js/jquery-1.9.0.min.js"></script>
+    	<script type="text/javascript" src="includes/js/jquery.nivo.slider.js"></script>
+		<!--  IE hack -->
+		<!--[if IE]>
+		<script type="text/javascript">
+				/* if you need a jQuery to fire within IE browser */
+				$(window).load(function() {
+        			$('#slider').nivoSlider();
+    			});
+				
+		</script>
+		<![endif] -->
+		<script>
+		function revealCopy(id){
+			if($('#box_'+id).css('display') == 'none'){ 
+				$('#box_'+id).show('slow');
+				$('#rm_'+id).text('>CLOSE');
+				$('#b2t').show('slow');
+				$('#b2t2').show('slow');
+			} else {
+					$('#box_'+id).hide('slow');
+					$('#rm_'+id).text('>READ MORE');
+					$('#b2t').hide('slow');
+					$('#b2t2').hide('slow');
+			}
+		}
+		
+		
+		jQuery.fn.topLink = function(settings) {
+			settings = jQuery.extend({
+				min: 1,
+				fadeSpeed: 200
+			}, settings);
+			return this.each(function() {
+				//listen for scroll
+				var el = $(this);
+				el.hide(); //in case the user forgot
+				$(window).scroll(function() {
+					if($(window).scrollTop() >= settings.min)
+					{
+						el.fadeIn(settings.fadeSpeed);
+					}
+					else
+					{
+						el.fadeOut(settings.fadeSpeed);
+					}
+				});
+			});
+		};
+		
+		
+		
+		$(document).ready(function() {
+			//set the link
+			$('#top-link').topLink({
+				min: 400,
+				fadeSpeed: 500
+			});
+			//smoothscroll
+			$('#top-link').click(function(e) {
+				e.preventDefault();
+				$.scrollTo(-10,200);
+			});
+		});
+</script>
+		<style type="text/css">
+		<!--
+		@import "includes/css/style.css";
+		@import "includes/css/nivo-slider.css";
+		@import "includes/css/light.css";
+		@import "includes/css/fontstylesheet.css";
+		-->
+		</style>
+		<!-- fav icon -->
+		<link rel="SHORTCUT ICON" href="favicon.ico" />
+	</head>
+	<body >
+	<!-- body content -->
+
+	<div id="holder" >
+		<div id="logo"><img src="images/logo.jpg" alt="OceanfoilLogo" border="0" width="216" height="114"/></div>
+		<div id="cont_us" align="left"><a href="contactUs.html">CONTACT US</a></div>
+		<span id="top"></span>
+			<div id="menu" >
+				<div class="m_option_norm" align="center"><a href="index.html">HOME</a></div>
+				<div class="m_option_norm" align="center"><a href="aboutUs.html" >ABOUT US</a></div>
+				<div class="m_option_norm" align="center"><a href="innovation.html" >INNOVATION</a></div>
+				<div class="m_option_norm" align="center"><a href="investors.html" >INVESTORS</a></div>
+				<div class="m_option_sustain" align="center"><a href="sustainability.html" >SUBSTAINABILITY</a></div>
+				<div class="m_option_news" align="left"><a href="news.html" >NEWS</a></div>
+			</div>
+			
+			<div id="leftImage" ><img src="images/img_aboutus.png" alt="About Us Image" width="320px" height="587" /></div>
+			<div id="pageContent" >
+			
+					<h1>Oceanfoil is a UK-based design company focused on the development of aerofoil designs suitable for installation on sea
+							and ocean-going merchant vessels.</h1>
+							<p>Oceanfoil has partnered with two of Europe’s leading research-based universities to redevelop
+								and improve designs for wind-assisted propulsion to augment conventional, mechanical power
+								for ocean transport ships.</p>
+				<div class="box">
+						<div class="as_header">
+							<h1>STRATEGY</h1>
+						</div>
+						<div class="as_link"><a href="javascript:revealCopy('1');" ><span id="rm_1">>&nbsp;READ MORE</span></a></div>
+						<div id="box_1" style="display:none">
+							<p>Oceanfoil aims to bring together the necessary skills, expertise and funding
+								 to develop and exploit the commercial potential of designs for aerofoil-
+								 assisted propulsion systems for the ocean-going transport sector.</p>
+							<p>Oceanfoil has partnered with universities, testing centres and designers to bring designs for an 
+								 aerofoil system to a production-ready standard,adapting the designs with the benefit of modern computer modelling and
+								 composite materials.</p>
+						</div>
+				</div>
+				<div class="box">
+					<div class="as_header">
+						<h1>FAQ'S</h1><a href="javascript:revealCopy('2');">
+					</div>
+					<div class="as_link">
+					<span id="rm_2">>&nbsp;READ MORE</span></a>
+					</div>
+					<div id="box_2" style="display:none">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+					Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum 
+					iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim 
+					qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet
+					 doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes 
+					 demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. 
+					 Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas 
+					humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes </p>
+					</div>
+				</div>
+				<div class="box">
+
+					<div class="as_header">
+						<h1>LEADERSHIP</h1>
+					</div>
+					<div class="as_link">
+						<a href="javascript:revealCopy('3');"><span id="rm_3">>&nbsp;READ MORE</span></a>
+					</div>
+					<div id="box_3" style="display:none">
+						<span class="noir">1. T Alun Evans CMG</span><br /><span class="lblue">Chairman</span>
+						<p>Alun Evans served in what became the Foreign and Commonwealth office,
+							serving abroad in Rangoon, Singapore, Geneva and Pretoria. Latterly, he
+							served as Director responsible for IT and Communications in London. After
+							leaving the FCO he advised international airlines such as British Airways on
+							international affairs. From 2001 to 2012 he was a non-executive director of
+							JP Morgan (Fleming) Asian Investment Trust and has been Vice Chairman of
+							the British Iranian Chamber of Commerce for over a decade.</p>
+							<p>Alun Evans was educated at University College, Oxford and held a
+							commission in the King’s Own Yorkshire Light Infantry. He was appointed a
+							Companion of the Order of St. Michael and St. George in 2004.</p>
+							
+						<span class="noir">2.Charles Moray</span><br /><span class="lblue">Managing Director</span>
+							 <p>Charles Moray is a finance professional with extensive experience of
+							investment banking, having held senior positions in The First Boston
+							Corporation (now a subsidiary of Credit Suisse), Merrill Lynch, Blyth Eastman
+							Dillon & Co. (now part of UBS AG), amongst others.</p>
+							<p>Charles Moray was educated at the Université d’Aix-Marseilles and Harrow
+							School.</p>
+						<span class="noir">3.John Richardson</span><br /><span class="lblue">Executive Director, Engineering and Production</span>
+							<p>John Richardson is a consultant engineer who has overseen plant operations, site maintenance
+								and energy management for a wide variety of facilities in the chemical and gas industries.
+								Throughout his career John has implemented initiatives and deployed systems which have
+								optimised either plant function or site maintenance.</p>
+								<p>John Richardson is a Chartered Engineer and the managing director of a carbon management
+								consultancy. John served for 22 years as an Engineer Officer in the Royal Navy Reserve,
+								spending time at sea as an Engineer and Seaman Officer. John has been active in producing
+								engineering solutions to off-shore applications</p>
+						<div id="b2t" style="display:none">
+						<a href="#top" id="top-link">^Back to top</a></div>
+						<p></p>
+						<span class="noir">4.Captain Roger Francis</span><br /><span class="lblue">Marine Consultant</span>
+								<p>Captain Francis is a retired deep sea pilot, having trained at Trinity House, prior to which
+									he captained numerous merchant vessels for Stephenson Clarke Shipping and served as a
+									Chief Officer on ships of the Geest Line and Harrisons. In 1987, Captain Francis was selected
+									as the Master of the merchant vessel M.V. Ashington during sea trials of the ‘Walker Wingsail’
+									aerofoil design, completing several voyages with the system in place in the course of its
+									evaluation. Oceanfoil now controls the rights to the aerofoil designed by John Walker and
+									this forms the basis for Oceanfoil’s improved designs.</p>
+								<p>Roger Francis possesses a Master’s Foreign Going certificate and Deep Sea Pilotage
+									License, issued by Trinity House. He is a member of the Nautical Institute and a Governor
+									of the R.N.L.I.</p>
+						<span class="noir">5.Robert Vincent</span><br /><span class="lblue">Chief Designer</span>
+								<p>Robert Vincent is a technical designer, specialising in the computer aided design and drafting
+									of marine technologies and naval architecture. Robert Vincent has extensive experience
+									in the design and modelling of aerofoil technology for the marine sector as well as smaller
+									vessels powered solely by the technology. He has been closely involved in the progressive
+									refinement of aerofoil designs throughout a career spanning thirty years.</p>
+								<p>Making use of computational modelling techniques, and adapting the designs to modern,
+									composite materials and production processes, Robert is instrumental to fully realising the
+									value of this technology to the transport fleet.</p>
+				<div id="b2t2" style="display:none"><a href="#top" id="top-link">^Back to top</a></div>
+					</div>
+					
+				</div>
+			</div>
+
+	</div>
+		<div id="footer">
+			<div id="bottom_menu">Privacy / Feedback / Disclaimer / Accessibility / Site Map</div>
+			<div id="copyright" align="right">Copyright Oceanfoil Limited</div>
+		</div>
+
+</body>
+</html>

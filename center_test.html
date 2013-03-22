@@ -1,0 +1,110 @@
+	
+	
+	<html lang="en-GB">
+	<head>
+		<title></title>
+		<!--  meta tags KEYWORDS not really needed but there for completeness -->
+		<meta name="robots" content="INDEX, FOLLOW">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="google" content="translate" />
+		<meta name="author" content="Matthew James">
+		<meta http-equiv="Content-Language" content="en-GB">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!-- links to stylesheets -->
+		<!-- <link href="includes/style/style.css" type="text/css" rev="style.css" rel="stylesheet" media="screen"/> -->
+		<!-- links to script includes -->
+		<script type="text/javascript" src="includes/js/"></script>
+		<!--  IE hack -->
+		<!--[if IE]>
+		<script type="text/javascript">
+				$(document).ready(function() {
+				/* if you need a jQuery to fire within IE browser */
+				});
+		</script>
+		<![endif] -->
+		
+		<style type="text/css">
+
+    
+    #middle{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.stretch_l, .stretch_r, #fixed {
+    display: table-cell;
+    border:1px solid green;
+}
+.stretch_l{
+background: url('images/bg_img_left.jpg') repeat-y;
+background-position: 100% 0%; 
+background-attachment:scroll;
+
+
+}
+.stretch_r{
+background: url('images/bg_img_right.jpg') repeat-y;
+
+
+}
+#fixed {
+    width: 960px;
+    
+}
+#middleContainer {
+    display: table;
+    width: 100%;
+    height: 100%;
+    border:1px solid blue;
+    
+}
+#middle { 
+    background: #fff;
+    position: absolute;
+    width: 100%;
+	left: 0;
+    z-index: 1;
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    
+}
+
+#top, #bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center
+}
+#top {
+    top: 0;
+    height: 50%
+}
+#bottom {
+    bottom: 0;
+    height: 50%
+}
+		<!--
+
+		-->
+		</style>
+		<!-- fav icon -->
+		<link rel="SHORTCUT ICON" href="favicon.ico" />
+	</head>
+	<body>
+	<!-- body content -->
+<!--  <div style="width:100%;border:1px solid green;">
+		<div style="min-width:100px;border:1px solid blue;float:left">...</div>
+		<div style="width:960px;border:1px solid #ce0000;margin:0 auto;position:relative;" align="center">center</div>
+		<div style="border:1px solid yellow;float:right;'position:relative; top:0px; right:-445px;"><div class="expandable-image">matthew</div></div>
+	</div>-->
+	<div id="middle">
+		<div id="middleContainer">
+        	<div class="stretch_l">&nbsp;</div>
+        	<div id="fixed">fixed</div>
+        	<div class="stretch_r">&nbsp;</div>
+    	</div>
+	</div>
+
+		</body>
+</html>
