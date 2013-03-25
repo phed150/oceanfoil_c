@@ -41,11 +41,11 @@ html[xmlns] .clearfix {
 	position:absolute;
 	top:0px;
 	left:0px;
-	display:none;
+	/* display:none; IE9 problem solver ?*/ 
 }
 .theme-light .nivoSlider a {
 	border:0;
-	display:block;
+	display:block !important; /*IE9 problem solver ?*/ 
 }
 
 .theme-light .nivo-controlNav {
