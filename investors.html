@@ -1,4 +1,4 @@
-<html lang="en-GB">
+<!DOCTYPE html lang="en-GB">
 	<head>
 		<title>Oceanfoil - Investors</title>
 		<!--  meta tags KEYWORDS not really needed but there for completeness -->
@@ -9,6 +9,7 @@
 		<meta name="author" content="Matthew James">
 		<meta http-equiv="Content-Language" content="en-GB">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10">
 		<!-- links to stylesheets -->
 		<link href="includes/css/style.css" type="text/css" rev="style.css" rel="stylesheet" media="screen"/>
 		<link href="includes/css/nivo-slider.css" type="text/css" rev="nivo-slider.css" rel="stylesheet" media="screen"/>
@@ -23,7 +24,6 @@
 				$(window).load(function() {
         			$('#slider').nivoSlider();
     			});
-				
 		</script>
 		<![endif] -->
 		<script>
@@ -32,8 +32,8 @@
 				$('#box_'+id).show('slow');
 				$('#rm_'+id).text('>CLOSE');
 			} else {
-					$('#box_'+id).hide('slow');
-					$('#rm_'+id).text('>READ MORE');
+				$('#box_'+id).hide('slow');
+				$('#rm_'+id).text('>READ MORE');
 			}
 		}
 		</script>
@@ -47,14 +47,14 @@
 		<!-- fav icon -->
 		<link rel="SHORTCUT ICON" href="favicon.ico" />
 	</head>
-	<body>
+<body>
 	<!-- body content -->
 	<div id="middle">
 		<div id="middleContainer">
         	<div class="stretch_l">&nbsp;</div>
         	<div id="fixed">
 				<div id="holder">
-					<div id="logo"><img src="images/logo.jpg" alt="OceanfoilLogo" border="0" width="216" height="114"/></div>
+					<div id="logo"><a href="index.html" title="Home"><img src="images/logo.jpg" alt="Oceanfoil Logo" border="0" width="216" height="114"/></a></div>
 						<div id="menu">
 							<div class="m_option_norm" align="center"><a href="index.html">HOME</a></div>
 							<div class="m_option_norm" align="center"><a href="aboutUs.html" >ABOUT US</a></div>
@@ -72,18 +72,18 @@
 									of aerofoils to assist propulsion systems for the sea and ocean-going transport sector.</h1>
 									<p>The designs were first developed and tested on a merchant vessel in the 1980’s, but
 										fell into abeyance.</p>
-										<p>The system, when tested over the course of several voyages, yielded significant savings in
+									<p>The system, when tested over the course of several voyages, yielded significant savings in
 										the amount of fuel used, increased the efficiency of the ship’s engine, as well as the
 										manoeuvrability of the ship.</P>
-										<p>Despite the aerofoil’s effect on fuel consumption, the fall in the price of bunker fuel
+									<p>Despite the aerofoil’s effect on fuel consumption, the fall in the price of bunker fuel
 										in the late 1980s rendered the full, commercial development of the system unviable.</p>
-										<p>With fuel costs rising, and increased global emphasis on reducing emissions of greenhouse
+									<p>With fuel costs rising, and increased global emphasis on reducing emissions of greenhouse
 										gases, the potential of Oceanfoil’s wind-powered propulsion technology is ready to be realised.
 										Oceanfoil holds the intellectual property used to design the original aerofoil and is currently
 										updating the design and materials of the aerofoil and revaluating the system in partnership
 										with leading tertiary institutions and testing centres.</p>
 							</div>
-							<div id="footer">
+						<div id="footer">
 					<div id="bottom_menu">Privacy / Feedback / Disclaimer / Accessibility / Site Map</div>
 					<div id="copyright" align="right">Copyright Oceanfoil Limited</div>
 				</div>
@@ -92,6 +92,5 @@
 		<div class="stretch_r">&nbsp;</div>
 	</div>
 </div>
-				
 </body>
 </html>

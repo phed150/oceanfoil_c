@@ -28,20 +28,24 @@ html[xmlns] .clearfix {
 * html .clearfix {
     height: 1%;
 }
+#slider {
+	clear: both;
+    display: block;
+    height:100%;
 
-
-
-
-.theme-light.slider-wrapper {
+}
+.theme-light .slider-wrapper {
     background: #fff;
     padding: 0px;
 }
 
 .theme-light .nivoSlider img {
-	position:absolute;
+	position:absolute ;
 	top:0px;
 	left:0px;
-	/* display:none; IE9 problem solver ?*/ 
+	width:100%;
+	/*display:inline; IE9 problem solver ?*/ 
+ 
 }
 .theme-light .nivoSlider a {
 	border:0;
